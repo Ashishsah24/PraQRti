@@ -1,2 +1,2 @@
-# PraQRti
-This Project is based on providing informations of all the vegetations planted in campus of Hansraj College
+# PraQrti_treeInfo
+This is the project that display the Information of Hansraj college Trees.
