@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sort list alphabetically</title>
+  </head>
+  <body>
+    <h1>Unsorted list:</h1>
+    <ul id="myList">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Pineapple</li>
+    </ul>
+    
+    <h1>Sorted list:</h1>
+    <ul id="sortedList">
+    </ul>
+    
+    <script>
+      // Get the unsorted list
+      const unsortedList = document.getElementById("myList");
+      
+      // Convert the list items to an array
+      const itemsArray = Array.from(unsortedList.getElementsByTagName("li"));
+      
+      // Sort the array alphabetically
+      itemsArray.sort((a, b) => a.innerText.localeCompare(b.innerText));
+      
+      // Create a new list with the sorted items
+      const sortedList = document.getElementById("sortedList");
+      itemsArray.forEach(item => sortedList.appendChild(item));
+    </script>
+  </body>
+</html>

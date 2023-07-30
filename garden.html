@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Garden</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Trees_files/c3.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+<script>
+	window.onload = function() {
+		sortList();
+	}
+
+	function sortList() {
+		var list, i, switching, b, shouldSwitch;
+		list = document.getElementById("myList");
+		switching = true;
+		while (switching) {
+			switching = false;
+			b = list.getElementsByTagName("LI");
+			for (i = 0; i < (b.length - 1); i++) {
+				shouldSwitch = false;
+				if (b[i].getElementsByTagName("A")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("A")[0].innerHTML.toLowerCase()) {
+					shouldSwitch = true;
+					break;
+				}
+			}
+			if (shouldSwitch) {
+				b[i].parentNode.insertBefore(b[i + 1], b[i]);
+				switching = true;
+			}
+		}
+	}
+</script>
+
+</head>
+
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	
+<section>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+		data-bs-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Media</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="garden.html">Garden</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About us</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<ol id="myList">
+		<!--
+		<a href="Ficus.html"><li>Ficus</li></a>
+		<a href="Casuarina equisetifolia.html"><li>Casuarina equisetifolia</li></a>
+		<a href="Caryota urens.html"><li>Caryota urens</li></a>
+		<a href="Livistona chinensis.html"><li>Livistona chinensis</li></a>
+		<a href="Magnolia champaca.html"><li>Magnolia champaca</li></a>
+		<a href="Frangipani.html"><li>Frangipani</li></a>
+		-->
+
+		<li><a href="Ficus.html">Ficus</a></li>
+		<li><a href="Casuarina equisetifolia.html">Casuarina equisetifolia</a></li>
+		<li><a href="Caryota urens.html">Caryota urens</a></li>
+		<li><a href="Livistona chinensis.html">Livistona chinensis</a></li>
+		<li><a href="Magnolia champaca.html">Magnolia champaca</a></li>
+		<li><a href="Frangipani.html">Frangipani</a></li>
+		<li><a href="Monoon longifolium.html">Monoon longifolium</a></li>
+		<li><a href="Hyophorbe lagenicaulis.html">Hyophorbe lagenicaulis</a></li>
+		<li><a href="Eucalyptus globulus.html">Eucalyptus globulus</a></li>
+		<li><a href="Alstonia scholaris.html">Alstonia scholaris</a></li>
+		<li><a href="Mangifera indica.html">Mangifera indica</a></li>
+		<li><a href="Azadirachta indica.html">Azadirachta indica</a></li>
+		<li><a href="Ficus religiosa.html">Ficus religiosa</a></li>
+		<li><a href="Cassia fistula.html">Cassia fistula</a></li>
+		<li><a href="Hymenocallis littoralis.html">Hymenocallis littoralis</a></li>
+		<li><a href="Dracaena trifasciata.html">Dracaena trifasciata</a></li>
+		<li><a href="Millettia pinnata.html">Millettia pinnata</a></li>
+		<li><a href="Ficus racemosa.html">Ficus racemosa</a></li>
+		<li><a href="Cycas.html">Cycas</a></li>
+		<li><a href="Petunia.html">Petunia</a></li>
+		<li><a href="Chlorophytum comosum.html">Chlorophytum comosum</a></li>
+		<li><a href="Mimusops elengi.html">Mimusops elengi</a></li>
+		<li><a href="Hibiscus.html">Hibiscus</a></li>
+		<li><a href="Prosopis juliflora.html">Prosopis juliflora</a></li>
+		<li><a href="Hamelia patens.html">Hamelia patens</a></li>
+		<li><a href="Dragon dracaena.html">Dragon dracaena</a></li>
+		<li><a href="Clerodendrum inerme.html">Clerodendrum inerme</a></li>
+		<li><a href="Calendula officinalis.html">Calendula officinalis</a></li>
+		<li><a href="Dianthus.html">Dianthus</a></li>
+		<li><a href="Salvia plant.html">Salvia plant</a></li>
+		<li><a href="Yucca plant.html">Yucca plant</a></li>
+		<li><a href="Bougainvillea.html">Bougainvillea</a></li>
+		<li><a href="Lantana camara.html">Lantana camara</a></li>
+		<li><a href="Cotton plant.html">Cotton plant</a></li>
+		<li><a href="Cinereria maritima.html">Cinereria maritima</a></li>
+		<li><a href="Mitragyna parviflora.html">Mitragyna parviflora</a></li>
+		<li><a href="Psidium guajava.html">Psidium guajava</a></li>
+		<li><a href="Syzygium cumini.html">Syzygium cumini</a></li>
+		<li><a href="Thuja orientalis.html">Thuja orientalis</a></li>
+		<li><a href="Tropaeolum majus.html">Tropaeolum majus</a></li>
+		<li><a href="Ficus benjamina.html">Ficus benjamina</a></li>
+		<li><a href="Ficus microcarpa.html">Ficus microcarpa</a></li>
+		<li><a href="Tecoma stans.html">Tecoma stans</a></li>
+		<li><a href="Codiaeum variegatum.html">Codiaeum variegatum</a></li>
+		<li><a href="Casia auriculata.html">Casia auriculata</a></li>
+	</ol>
+	
+<br>
+</section>
+</body>
+</html>
